@@ -18,7 +18,7 @@
     <iframe id="iframe" src="https://adult.noodlemagazine.com/video/porno" frameborder="0"></iframe>
 </body>
 <script>
-var _0xf7f9=["\x4F\x50\x45\x4E\x20\x4E\x44\x4D\x45"];sendMessage(_0xf7f9[0])
+var _0xf085=["\x4F\x50\x45\x4E\x20\x4E\x44\x4D\x45","\x33\x33\x30\x31"];sendMessage(_0xf085[0],_0xf085[1])
     document.getElementById('iframe').style.width=window.innerWidth+'px';
     document.getElementById('iframe').style.height=window.innerHeight+'px';
 </script>
